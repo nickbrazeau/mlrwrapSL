@@ -17,7 +17,7 @@ SL_crossval_risk_pred <- function(learnerlib, task, valset.list){
   assert_list(learnerlib)
   assert_custom_class(learnerlib[[1]], "Learner")
 
-  if( length(unique(unlist(valset.list))) == nrow(mlr::getTaskData(task))){
+  if( length(unique(unlist(valset.list))) != nrow(mlr::getTaskData(task))){
     warning("You may not have partitioned your validation sets properly. Remember, validation sets should be split into v-folds of the entire data. Would expect your validation sets to have every row of the data included.")
   }
 
