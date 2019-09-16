@@ -7,11 +7,11 @@
 get_preds(trained, task, subset = NULL)
 }
 \arguments{
-\item{trained}{\code{WrappedModel}; A \code{mlr} learner that has been trained with \code{mlr::train} and results in a \class{WrappedModel}}
+\item{trained}{\code{WrappedModel}; A \code{mlr} learner that has been trained with \code{mlr::train} and results in a \code{WrappedModel}}
 
 \item{task}{\code{Task}; A \code{mlr} task}
 
-\item{subset}{<numeric vector>; A numeric vector of the rows in the \class{Task} data that should be used for training}
+\item{subset}{<numeric vector>; A numeric vector of the rows in the \code{Task} data that should be used for training}
 }
 \description{
 Get Predictions from Learner
