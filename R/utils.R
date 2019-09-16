@@ -25,7 +25,7 @@ get_preds <- function(trained, task, subset=NULL){
 #' @details Note the function is essentially  lifted directly from SuperLearner::method.NNLS. I dropped observation weights and changed the return slightly
 #' @param Z numeric matrix; the matrix of predictions from the K algorithms
 #' @param Y numeric; outcome
-#' @param algnames <character vector>; names of the K algorithms that correspond to the columns in \param{Z}
+#' @param algnames <character vector>; names of the K algorithms that correspond to the columns in \code{Z}
 #' @param verbose logical; Talk or quiet
 #'
 

@@ -11,7 +11,7 @@ nnls_cvrisk(Z, Y, algnames, verbose = T)
 
 \item{Y}{numeric; outcome}
 
-\item{algnames}{<character vector>; names of the K algorithms that correspond to the columns in \param{Z}}
+\item{algnames}{<character vector>; names of the K algorithms that correspond to the columns in \code{Z}}
 
 \item{verbose}{logical; Talk or quiet}
 }
