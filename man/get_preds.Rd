@@ -9,7 +9,7 @@ get_preds(trained, task, subset = NULL)
 \arguments{
 \item{trained}{\code{WrappedModel}; A \code{mlr} learner that has been trained with \code{mlr::train} and results in a \class{WrappedModel}}
 
-\item{task}{\class{Task}; A \code{mlr} task}
+\item{task}{\code{Task}; A \code{mlr} task}
 
 \item{subset}{<numeric vector>; A numeric vector of the rows in the \class{Task} data that should be used for training}
 }
