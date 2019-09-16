@@ -9,7 +9,7 @@ SL_crossval_risk_pred(learnerlib, task, valset.list)
 \arguments{
 \item{learnlib}{list; A list of \code{Learners} from the \code{mlr} package}
 
-\item{Task}{\class{Task}; A \class{Task} from the \code{mlr} package}
+\item{Task}{\code{Task}; A \code{Task} from the \code{mlr} package}
 
 \item{valset.matrix}{list; A list of the row numbers that correspond to the validation observations for each of the V-fold processes. Note, each list item should be a vector of rownumbers}
 }

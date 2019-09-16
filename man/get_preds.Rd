@@ -7,7 +7,7 @@
 get_preds(trained, task, subset = NULL)
 }
 \arguments{
-\item{trained}{\class{WrappedModel}; A \code{mlr} learner that has been trained with \code{mlr::train} and results in a \class{WrappedModel}}
+\item{trained}{\code{WrappedModel}; A \code{mlr} learner that has been trained with \code{mlr::train} and results in a \class{WrappedModel}}
 
 \item{task}{\class{Task}; A \code{mlr} task}
 

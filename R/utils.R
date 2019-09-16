@@ -1,5 +1,5 @@
 #' @title Get Predictions from Learner
-#' @param trained \class{WrappedModel}; A \code{mlr} learner that has been trained with \code{mlr::train} and results in a \class{WrappedModel}
+#' @param trained \code{WrappedModel}; A \code{mlr} learner that has been trained with \code{mlr::train} and results in a \class{WrappedModel}
 #' @param task \class{Task}; A \code{mlr} task
 #' @param subset <numeric vector>; A numeric vector of the rows in the \class{Task} data that should be used for training
 #' @details Function to extract predictions as a list from the various individually trained learners
