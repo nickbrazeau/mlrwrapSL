@@ -87,7 +87,7 @@ SL_crossval_risk_pred <- function(learnerlib, task, valset.list){
   #.......................................................................
   # Aplly CVrisk Coeffs
   #.......................................................................
-  if(all(cvrisk$coef == 0)){warning("The CV Risk could not be calculated for this model")}
+  if(all(cvrisk$coef == 0)){stop("The CV Risk could not be calculated for this model")}
   EL.cvrisk.preds <- Zprime %*% cvrisk$coef
 
 
