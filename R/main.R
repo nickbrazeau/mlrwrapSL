@@ -6,9 +6,14 @@
 #' @param learnlib list; A list of \code{Learners} from the \code{mlr} package
 #' @param Task \code{Task}; A \code{Task} from the \code{mlr} package
 #' @param valset.matrix list; A list of the row numbers that correspond to the validation observations for each of the V-fold processes. Note, each list item should be a vector of rownumbers
+#' @param seed numeric; a random seed to set for the ML algorithms
 #' @export
 
-SL_crossval_risk_pred <- function(learnerlib, task, valset.list){
+SL_crossval_risk_pred <- function(learnerlib, task, valset.list, seed){
+
+
+  set.seed(seed, "L'Ecuyer")
+
   #.......................................................................
   # assertions
   #.......................................................................
